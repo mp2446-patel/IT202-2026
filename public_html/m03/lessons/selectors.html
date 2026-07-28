@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selector API Comparison</title>
+</head>
+<body>
+  <p id="status">Ready</p>
+  <p class="message">First message</p>
+  <p class="message">Second message</p>
+  <button type="button">Check selectors</button>
+
+  <script>
+    const status = document.getElementById("status");
+    const firstButton = document.querySelector("button");
+    const allMessages = document.querySelectorAll(".message");
+
+    console.log(status);
+    console.log(firstButton);
+    console.log(allMessages);
+  </script>
+</body>
+</html>

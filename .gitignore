@@ -6,3 +6,4 @@ vendor/
 _docs/
 *.log
 *.log.*
+tools/

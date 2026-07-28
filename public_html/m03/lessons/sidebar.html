@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Layout State</title>
+  <style>
+    .layout {
+      --sidebar-width: 18rem;
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      min-height: 100vh;
+    }
+
+    .layout.sidebar-collapsed {
+      --sidebar-width: 3.5rem;
+    }
+
+    .sidebar.is-collapsed {
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">Sidebar navigation</aside>
+    <main>Main content</main>
+  </div>
+</body>
+</html>

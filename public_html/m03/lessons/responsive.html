@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Rule</title>
+  <style>
+    .profile-grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    @media (min-width: 700px) {
+      .profile-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="profile-grid">
+    <section>Profile details</section>
+    <section>Recent activity</section>
+  </main>
+</body>
+</html>

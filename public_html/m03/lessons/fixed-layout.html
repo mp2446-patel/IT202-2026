@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fixed Header</title>
+  <style>
+    body {
+      margin: 0;
+      overflow:hidden;
+    }
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4rem;
+      background: #0f172a;
+      color: white;
+    }
+    .site-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3rem;
+      background: #0f172a;
+      color: white;
+    }
+
+    .page-content {
+      height: calc(100vh - 7rem);
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">Fixed header</header>
+  <main class="page-content">
+    <p>The header stays at the top of the viewport.</p>
+    <p>The footer stays at the bottom of the viewport.</p>
+    <p>Only this middle region scrolls.</p>
+    <p>Add more content here to test the scroll area.</p>
+
+    
+  </main>
+  <footer class="site-footer">Fixed footer</footer>
+</body>
+</html>

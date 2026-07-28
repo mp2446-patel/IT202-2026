@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Media And Canvas Tags</title>
+</head>
+<body>
+  <main>
+    <img src="images/logo.png" alt="Course project logo">
+
+    <picture>
+      <source srcset="images/hero-wide.png" media="(min-width: 800px)">
+      <img src="images/hero-small.png" alt="Student project dashboard">
+    </picture>
+
+    <svg viewBox="0 0 100 100" role="img" aria-label="Status circle">
+      <circle cx="50" cy="50" r="40"></circle>
+    </svg>
+
+    <video controls>
+      <source src="media/demo.mp4" type="video/mp4">
+      <track src="captions/demo.vtt" kind="captions" srclang="en" label="English">
+    </video>
+
+    <audio controls>
+      <source src="media/intro.mp3" type="audio/mpeg">
+    </audio>
+
+    <iframe
+      height="800"
+      width="800"
+      title="Course calendar"
+      src="https://courses.ethereallab.app">
+    </iframe>
+
+    <canvas id="chart" width="300" height="150">
+      Chart preview requires JavaScript.
+    </canvas>
+  </main>
+</body>
+</html>

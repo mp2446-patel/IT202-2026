@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cascade And Specificity</title>
+  <style>
+    p {
+      color: #334155;
+    }
+
+    .status-message {
+      color: #0f766e;
+    }
+
+    .page-shell .status-message {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main class="page-shell">
+    <p class="status-message">The more specific selector wins.</p>
+    <p>Another test</p>
+  </main>
+  <footer>
+    <p class="status-message">Not bold</p>
+  </footer>
+</body>
+</html>

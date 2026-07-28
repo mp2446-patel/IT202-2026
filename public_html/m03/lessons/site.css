@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+
+h1 {
+  border-bottom: 3px solid #f59e0b;
+}
+
+.page-shell {
+  /* Limit line length so the content stays readable. */
+  max-width: 720px;
+}
+
+.status-message {
+  background: #ecfdf5;
+  border: 1px solid #0f766e;
+  padding: 1rem;
+}
+
+.primary-action {
+  background: #d51dd8;
+  color: white;
+  padding: 0.75rem 1rem;
+}

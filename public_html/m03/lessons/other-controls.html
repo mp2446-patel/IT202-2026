@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Other Form Controls</title>
+</head>
+
+<body>
+  <form method="GET">
+    <label for="status">Status</label>
+    <select id="status" name="status">
+      <option value="">Choose one</option>
+      <option value="draft">Draft</option>
+      <option value="published">Published</option>
+    </select>
+
+    <label for="notes">Notes</label>
+    <textarea id="notes" name="notes" rows="4">Write details here</textarea>
+
+    <label>
+      <input type="checkbox" name="include_archived[]" value="1">
+      Include archived results
+    </label>
+    <label>
+      <input type="checkbox" name="include_archived[]" value="2">
+      Include completed results
+    </label>
+    <label>
+      <input type="checkbox" name="include_archived[]" value="3">
+      Include pending results
+    </label>
+
+    <label>
+      <input type="radio" name="sort" value="newest" checked>
+      Newest first
+    </label>
+
+    <label>
+      <input type="radio" name="sort" value="oldest">
+      Oldest first
+    </label>
+    <button type="submit">Apply</button>
+
+  </form>
+</body>
+
+</html>

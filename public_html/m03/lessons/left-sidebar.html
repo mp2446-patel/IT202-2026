@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toggle State With Classes</title>
+  <style>
+    .layout {
+      display: grid;
+      grid-template-columns: 18rem 1fr;
+      gap: 1rem;
+    }
+
+    .layout.left-collapsed {
+      grid-template-columns: 3.5rem 1fr;
+    }
+
+    #leftPanel.is-collapsed {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <button id="leftToggle" type="button">Toggle Sidebar</button>
+
+  <div class="layout">
+    <aside id="leftPanel">Navigation links</aside>
+    <main>Main content</main>
+  </div>
+
+  <script>
+    const button = document.querySelector("#leftToggle");
+    const panel = document.querySelector("#leftPanel");
+    const layout = document.querySelector(".layout");
+
+    if (button && panel && layout) {
+      button.addEventListener("click", function () {
+        panel.classList.toggle("is-collapsed");
+        layout.classList.toggle("left-collapsed");
+      });
+    }
+  </script>
+</body>
+</html>
