@@ -1,0 +1,23 @@
+{
+  "numFound": 2,
+  "start": 0,
+  "docs": [
+    {
+      "title": "Clean Code",
+      "author_name": [
+        "Robert C. Martin"
+      ],
+      "first_publish_year": 2008,
+      "cover_i": 9612335
+    },
+    {
+      "title": "The Pragmatic Programmer",
+      "author_name": [
+        "Andrew Hunt",
+        "David Thomas"
+      ],
+      "first_publish_year": 1999,
+      "cover_i": 8231856
+    }
+  ]
+}
