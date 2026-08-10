@@ -24,5 +24,6 @@ select it to open/view it, then copy that url for the below items -->
 - Milestone 3
   - https://github.com/mp2446-patel/IT202-2026/tree/Milestone3
 - Demo Link
-  - (add youtube link to unlisted or public demo) Note you'll need to verify your youtube account to upload videos > 15mins (https://support.google.com/youtube/answer/171664)
+  - - Demo Link
+  - https://youtu.be/G6JoypsyXwo?si=BZKDfili8P9kRTz9
   
